@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"/>
+  <link rel="stylesheet"  href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+</head>
+<body>
+  <main class="container">
+    <div class="checkbox">
+      <h3 class="checkbox__title">Категории:</h3>
+      <ul class="checkox__list list-reset">
+        <li class="checkbox__input">
+          <label for="check1" class="checkbox__label">
+            <input type="checkbox" name="check1" id="check1" class="checkbox__standart-element">
+            Динозавры
+            <span class="checkbox__element"></span>
+          </label>
+        </li>
+        <li class="checkbox__input">
+          <label for="check2" class="checkbox__label">
+            <input type="checkbox" name="check2" id="check2" class="checkbox__standart-element">
+            Медведи
+            <span class="checkbox__element"></span>
+          </label>
+        </li>
+        <li class="checkbox__input">
+          <label for="check3" class="checkbox__label">
+            <input type="checkbox" name="check3" id="check3" class="checkbox__standart-element">
+            Косули
+            <span class="checkbox__element"></span>
+          </label>
+        </li>
+        <li class="checkbox__input">
+          <label for="check4" class="checkbox__label">
+            <input type="checkbox" name="check4" id="check4" class="checkbox__standart-element">
+            Лисы
+            <span class="checkbox__element"></span>
+          </label>
+        </li>
+        <li class="checkbox__input">
+          <label for="check5" class="checkbox__label">
+            <input type="checkbox" name="check5" id="check5" class="checkbox__standart-element">
+            Волки
+            <span class="checkbox__element"></span>
+          </label>
+        </li>
+        <li class="checkbox__input">
+          <label for="check6" class="checkbox__label">
+            <input type="checkbox" name="check6" id="check6" class="checkbox__standart-element">
+            Олени и лоси
+            <span class="checkbox__element"></span>
+          </label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="custom-select">
+      <select name="select" id="select" class="select">
+        <option value="">Материал</option>
+        <option value="">Древесина</option>
+        <option value="">Металл</option>
+        <option value="">Камень</option>
+        <option value="">Пластик</option>
+        <option value="">Композитный</option>
+        <option value="">Гипс</option>
+      </select>
+    </div>
+
+    <div class="map" id="map"></div>
+
+    <div class="simplebar" data-simplebar>
+      Сложно сказать, почему многие известные личности представлены в&nbsp;исключительно положительном свете. Лишь активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими инстанциями. Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно интересные особенности картины в&nbsp;целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем настолько очевидна, что социально-экономическое развитие, а&nbsp;также свежий взгляд на&nbsp;привычные вещи&nbsp;&mdash; безусловно открывает новые горизонты для первоочередных требований.
+    </div>
+
+    <div class="cstmfrm">
+      <form action="https://jsonplaceholder.typicode.com/posts" type="post" class="custom-form">
+        <label class="custon-form__label">
+          <input class="custom-form__input" type="text" name="name" id="name" placeholder="Имя*" data-validate-field="name">
+        </label>
+        <label class="custon-form__label">
+          <input class="custom-form__input" type="tel" name="tel" id="tel" placeholder="Телефон*" data-validate-field="tel" data-validate-rules="phone" >
+        </label>
+        <label class="custon-form__label">
+          <input class="custom-form__input" type="email" name="email" id="email" placeholder="E-mail*" data-validate-field="email">
+        </label>
+        <button class="custom-form__btn btn-reset" type="submit">Заказать</button>  
+      </form>
+    </div>
+
+    <div class="tooltips">
+      <div class="tooltips__text">
+        <p class="tooltips__desc">
+          Следует отметить, что социально-экономическое развитие способствует повышению качества переосмысления внешнеэкономических политик.
+        </p>
+        <span class="tooltips__tooltip tooltip">
+          <div class="tooltip__marker"></div>
+          <div class="tooltip__popup">
+            Глава&nbsp;2, страница 176
+          </div>
+        </span>
+      </div>
+      <div class="tooltips__text">
+        <p class="tooltips__desc">
+          Следует отметить, что социально-экономическое развитие способствует повышению качества переосмысления внешнеэкономических политик.
+        </p>
+        <span class="tooltips__tooltip tooltip">
+          <div class="tooltip__marker"></div>
+          <div class="tooltip__popup">
+            Глава&nbsp;2, страница 176
+          </div>
+        </span>
+      </div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+  <script src="js/custom_select.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <script src="js/map.js"></script>
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <script src="js/simplebar.js"></script>
+  <script src="js/justvalidate.min.js"></script>
+  <script src="js/inputmask.min.js"></script>
+  <script src="js/custom_input_form.js"></script>
+</body>
+</html>
